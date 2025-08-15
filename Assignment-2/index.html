@@ -6,6 +6,14 @@
         <meta name="description" content="Webpage where you can create a smoothie.">
         <title>COMP1073 Assignment 2 | Smoothie Maker</title>
         <meta  name="robots" content="noindex, nofollow">
+
+        <!--css-->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--js -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/javascript.js"></script>
     </head>
 
     <body>
@@ -23,7 +31,7 @@
                     Bananas, Mangos, Blueberries, Strawberries, Raspberries, Blackberries, Yogurt, Spinich,
                     Carrots, Milk, Peanuts, 
                     -->
-                    <form>
+                    <form id="smoothie">
                         <input type="checkbox" id="bananas" name="toppings" value="Bananas">
                         <label for="bananas">Bananas</label>
                         <input type="checkbox" id="mangoes" name="toppings" value="Mangoes">
@@ -48,8 +56,13 @@
                         <label for="peanuts">Peanuts</label>
                         <input type="checkbox" id="nutella" name="toppings" value="Nutella">
                         <label for="nutella">Nutella</label>
-                        <input type="submit" id="order" name="order" value="Order">
+                        <input type="submit" id="submit" name="submit" value="Order">
                     </form>
+                </div>
+
+                <!--This div is for the paragraph element that will display the smoothie description-->
+                <div>
+                    <p id="desc"></p>
                 </div>
             </section>
         </main>
