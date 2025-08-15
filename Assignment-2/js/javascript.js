@@ -4,11 +4,6 @@ $(document).ready(function(){
         $("#footer").load("footer.html");
     });
 
-    /*
-    document.getElementById('smoothie').addEventListener('submit', function(event){
-        event.preventDefault();
-    });*/
-
     document.getElementById('smoothie').addEventListener('submit', function(event){
         /* prevent default */
         event.preventDefault();
@@ -37,6 +32,5 @@ $(document).ready(function(){
         /* finally send the description to the paragraph element reserved for it. */
         document.getElementById('desc').innerHTML = description;
     })
-    
 
 })
